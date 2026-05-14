@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Viento a Favor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    padding:20px 50px;
+    position:absolute;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:100;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    min-height:100vh;
+
+    background: linear-gradient(
+        135deg,
+        #990036,
+        #000000,
+        #b30056
+    );
+
+    padding-top:120px;
+    padding-bottom:80px;
+}
+
+/* EFECTOS */
+
+.hero::before{
+    content:"";
+    width:400px;
+    height:400px;
+    background:rgba(59,130,246,0.25);
+
+    position:absolute;
+    top:-100px;
+    left:-100px;
+
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.hero::after{
+    content:"";
+    width:350px;
+    height:350px;
+    background:rgba(37,99,235,0.25);
+
+    position:absolute;
+    bottom:-100px;
+    right:-100px;
+
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+/* CONTENIDO */
+
+.hero-content{
+    text-align:center;
+    color:white;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    position:relative;
+    z-index:10;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.6;
+    color:#dbeafe;
+    margin-bottom:40px;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    padding:15px 40px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* GALERIA */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:white;
+    margin-top:80px;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#dbeafe;
+    font-size:18px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery a{
+    display:block;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Motos.html">Motos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+    </div>
+
+    <section id="galeria">
+
+        <div class="container">
+
+            <div class="section-title">
+
+            </div>
+
+            <div class="gallery">
+
+                <a href="logo1.html">
+                    <img src="imagenes/logo1.jpg" alt="Moto 1" width="250" height="250">
+                </a>
+
+                <a href="logo2.html">
+                    <img src="imagenes/logo2.png" alt="Moto 2" width="100" height="100">
+                </a>
+
+                <a href="logo3.html">
+                    <img src="imagenes/logo4.png" alt="Moto 3" width="250" height="100">
+                </a>
+
+                <a href="logo4.html">
+                    <img src="imagenes/logo3.jfif" alt="Moto 4" width="250" height="250">
+                </a>
+
+                <a href="logo5.html">
+                    <img src="imagenes/logo5.png" alt="Moto 5" width="250" height="250">
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+</body>
+</html>

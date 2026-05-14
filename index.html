@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Viento a Favor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+
+.navbar{
+    width:100%;
+    padding:20px 50px;
+    position:absolute;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:100;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background: linear-gradient(
+        135deg,
+        #990036,
+        #000000,
+        #b30056
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    width:400px;
+    height:400px;
+    background:rgba(59,130,246,0.25);
+
+    position:absolute;
+    top:-100px;
+    left:-100px;
+
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.hero::after{
+    content:"";
+    width:350px;
+    height:350px;
+    background:rgba(105, 138, 211, 0.25);
+
+    position:absolute;
+    bottom:-100px;
+    right:-100px;
+
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+
+.hero-content{
+    max-width:750px;
+    padding:20px;
+    z-index:10;
+}
+
+.hero h1{
+    font-size:75px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.6;
+    color:#dbeafe;
+    margin-bottom:35px;
+}
+
+
+.boton{
+    display:inline-block;
+    padding:15px 40px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Pasión por la Velocidad</h1>
+
+        <p>
+            Viento a Favor es una página creada para los amantes
+            de las motocicletas y la velocidad. Nuestro objetivo es
+            compartir información, estilos y contenido visual sobre
+            las motos más impresionantes del mundo.
+        </p>
+
+         <p>
+                Aquí podrás explorar diferentes modelos,
+                conocer marcas reconocidas y disfrutar
+                de una experiencia moderna y profesional.
+        </p>
+
+
+        <a href="motos.html" class="boton">Explorar</a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

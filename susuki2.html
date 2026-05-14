@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suzuki GSX-S1000</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dfe0e4;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#000000;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* TARJETA */
+
+.card{
+    background:#000000;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+.card-content{
+    padding:40px;
+}
+
+.card-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.card-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card img{
+        height:300px;
+    }
+
+    .card-content h1{
+        font-size:35px;
+    }
+
+    .card-content p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <img src="imagenes/moto7.jfif" alt="Suzuki GSX-S1000">
+
+        <div class="card-content">
+
+            <h1>Suzuki GSX-S1000</h1>
+
+            <h2>
+                   Q 135,000.00
+            </h2>
+
+            <p>
+                La Suzuki GSX-S1000 es una motocicleta naked deportiva
+                diseñada para ofrecer potencia extrema, aceleración rápida
+                y una conducción agresiva tanto en ciudad como en carretera.
+            </p>
+
+            <p>
+                Equipa un motor de 999 cc derivado de la legendaria GSX-R1000,
+                proporcionando una experiencia deportiva con gran torque
+                y excelente respuesta en altas revoluciones.
+            </p>
+
+            <p>
+                Su diseño streetfighter incorpora líneas agresivas,
+                iluminación LED y una posición de manejo cómoda,
+                combinando deportividad con confort.
+            </p>
+
+            <p>
+                También incluye tecnología moderna como control de tracción,
+                modos de conducción, quick shifter bidireccional
+                y sistema Ride-by-Wire para un manejo más preciso.
+            </p>
+
+            <p>
+                La GSX-S1000 utiliza frenos Brembo con ABS,
+                suspensión KYB ajustable y un chasis de aluminio
+                que brinda gran estabilidad y control en curvas.
+            </p>
+
+            <p>
+                <strong>Motor:</strong> 999 cc, 4 cilindros en línea, DOHC.<br>
+                <strong>Potencia:</strong> Aproximadamente 152 HP.<br>
+                <strong>Transmisión:</strong> 6 velocidades.<br>
+                <strong>Refrigeración:</strong> Líquida.<br>
+                <strong>Frenos:</strong> Brembo con ABS.<br>
+                <strong>Sistema:</strong> Ride-by-Wire y control de tracción.<br>
+                <strong>Tanque:</strong> 19 litros.
+            </p>
+
+            <a href="Registro.html" class="boton">
+                Comprar
+            </a>
+
+            <a href="logo2.html" class="boton">
+                Regresar
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

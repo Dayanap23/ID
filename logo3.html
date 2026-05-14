@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Velocity Motors</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#420a0ade;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#420a0ade;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#cadcf1;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    padding:50px;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.titulo p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* TARJETAS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#420a0ade;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    object-position:center;
+    transition:0.4s;
+}
+
+.card img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTENIDO CARD */
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    margin-bottom:15px;
+    color:#cadcf1;
+    font-size:28px;
+}
+
+.card-content p{
+    color:#cbd5e1;
+    line-height:1.7;
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contenedor{
+        padding:20px;
+    }
+
+    .titulo h1{
+        font-size:35px;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="contenedor">
+
+    <div class="titulo">
+
+        <h1>Yamaha</h1>
+
+    </div>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <a href="yamaha1.html">
+                <img src="imagenes/moto21.jfif" alt="Moto Deportiva">
+            </a>
+
+            <div class="card-content">
+
+                <h3>Yamaha Ténéré 700</h3>
+
+                <h2>
+                    Q 190,000.00
+                </h2>
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <a href="yamaha2.html">
+                <img src="imagenes/moto22.jfif" alt="Moto Naked">
+            </a>
+
+            <div class="card-content">
+
+                <h3>Yamaha YZF-R1</h3>
+
+                <h2>
+                    Q 125,000.00
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <a href="yamaha3.html">
+                <img src="imagenes/moto23.jfif" alt="Moto Chopper">
+            </a>
+
+            <div class="card-content">
+
+                <h3>Yamaha NMAX 155</h3>
+
+                <h2>
+                    Q 53,000.00
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="card">
+
+            <a href="yamaha4.html">
+                <img src="imagenes/moto25.jfif" alt="Moto Deportiva">
+            </a>
+
+            <div class="card-content">
+
+                <h3>Yamaha MT-03</h3>
+
+                <h2>
+                    Q 36,000.00
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <a href="yamaha5.html">
+                <img src="imagenes/moto24.jfif" alt="Moto Deportiva">
+            </a>
+
+            <div class="card-content">
+
+                <h3>Yamaha R15</h3>
+
+                <h2>
+                    Q 31,000.00
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

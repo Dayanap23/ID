@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hero Ignitor 125</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dfe0e4;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#000000;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* TARJETA */
+
+.card{
+    background:#000000;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+.card-content{
+    padding:40px;
+}
+
+.card-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.card-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card img{
+        height:300px;
+    }
+
+    .card-content h1{
+        font-size:35px;
+    }
+
+    .card-content p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <img src="imagenes/moto18.jfif" alt="Hero Ignitor 125">
+
+        <div class="card-content">
+
+            <h1>Hero Ignitor 125</h1>
+
+            <h2>Q16,900.00 </h2>
+
+            <p>
+                La Hero Ignitor 125 es una motocicleta
+                urbana diseñada para brindar comodidad,
+                economía y un estilo moderno
+                ideal para el uso diario.
+            </p>
+
+            <p>
+                Equipa un motor monocilíndrico de 125 cc
+                de 4 tiempos, ofreciendo una conducción suave,
+                eficiente y con excelente ahorro de combustible.
+            </p>
+
+            <p>
+                Su diseño incorpora líneas deportivas,
+                asiento cómodo e iluminación moderna,
+                proporcionando una apariencia elegante
+                y juvenil.
+            </p>
+
+            <p>
+                También cuenta con transmisión mecánica
+                de 5 velocidades, suspensión telescópica
+                y freno delantero de disco,
+                mejorando la estabilidad y seguridad.
+            </p>
+
+            <p>
+                La Ignitor 125 destaca por su bajo consumo,
+                mantenimiento económico y facilidad de manejo,
+                siendo ideal para ciudad y trayectos diarios.
+            </p>
+
+            <p>
+                <strong>Motor:</strong> 125 cc, monocilíndrico, 4 tiempos.<br>
+                <strong>Potencia:</strong> Aproximadamente 10.7 HP.<br>
+                <strong>Transmisión:</strong> 5 velocidades.<br>
+                <strong>Refrigeración:</strong> Aire.<br>
+                <strong>Frenos:</strong> Disco delantero y tambor trasero.<br>
+                <strong>Arranque:</strong> Eléctrico y pedal.<br>
+                <strong>Tanque:</strong> 9 litros.
+            </p>
+
+            <a href="Registro.html" class="boton">
+                Comprar
+            </a>
+
+            <a href="logo5.html" class="boton">
+                Regresar
+            </a>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

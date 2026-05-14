@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suzuki GSX-R750</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dfe0e4;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#000000;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* TARJETA */
+
+.card{
+    background:#000000;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+.card-content{
+    padding:40px;
+}
+
+.card-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.card-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card img{
+        height:300px;
+    }
+
+    .card-content h1{
+        font-size:35px;
+    }
+
+    .card-content p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <img src="imagenes/moto9.jfif" alt="Suzuki GSX-R750">
+
+        <div class="card-content">
+
+            <h1>Suzuki GSX-R750</h1>
+
+            <h2>
+                    Q 125,000.00
+            </h2>
+
+            <p>
+                La Suzuki GSX-R750 es una motocicleta supersport
+                reconocida por combinar la agilidad de una 600 cc
+                con la potencia de una moto de mayor cilindrada.
+            </p>
+
+            <p>
+                Equipa un motor de 750 cc de 4 cilindros en línea,
+                ofreciendo aceleración rápida, gran velocidad
+                y excelente rendimiento en carretera y pista.
+            </p>
+
+            <p>
+                Su diseño aerodinámico está inspirado en las motos
+                de competición de Suzuki, incorporando carenado deportivo,
+                iluminación agresiva y una postura de manejo racing.
+            </p>
+
+            <p>
+                También incluye tecnología avanzada como selector
+                de modos de conducción, sistema ABS y suspensión ajustable,
+                proporcionando mayor control y estabilidad.
+            </p>
+
+            <p>
+                La GSX-R750 es considerada una de las motos deportivas
+                más equilibradas gracias a su potencia,
+                bajo peso y excelente maniobrabilidad.
+            </p>
+
+            <p>
+                <strong>Motor:</strong> 750 cc, 4 cilindros en línea, DOHC.<br>
+                <strong>Potencia:</strong> Aproximadamente 148 HP.<br>
+                <strong>Transmisión:</strong> 6 velocidades.<br>
+                <strong>Refrigeración:</strong> Líquida.<br>
+                <strong>Frenos:</strong> Disco con ABS.<br>
+                <strong>Suspensión:</strong> Ajustable delantera y trasera.<br>
+                <strong>Tanque:</strong> 17 litros.
+            </p>
+
+            <a href="Registro.html" class="boton">
+                Comprar
+            </a>
+
+            <a href="logo2.html" class="boton">
+                Regresar
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

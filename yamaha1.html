@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yamaha Ténéré 700</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dfe0e4;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#000000;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* TARJETA */
+
+.card{
+    background:#000000;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+.card-content{
+    padding:40px;
+}
+
+.card-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.card-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card img{
+        height:300px;
+    }
+
+    .card-content h1{
+        font-size:35px;
+    }
+
+    .card-content p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Viento a Favor</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="Registro.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <img src="imagenes/moto21.jfif" alt="Yamaha Ténéré 700">
+
+        <div class="card-content">
+
+            <h1>Yamaha Ténéré 700</h1>
+
+            <h2>
+                    Q 190,000.00
+            </h2>
+
+            <p>
+                La Yamaha Ténéré 700 es una motocicleta adventure
+                diseñada para largas travesías y conducción off-road,
+                reconocida por su resistencia, potencia y versatilidad.
+            </p>
+
+            <p>
+                Equipa un motor bicilíndrico CP2 de 689 cc,
+                ofreciendo una aceleración suave, excelente torque
+                y gran rendimiento en carretera y caminos difíciles.
+            </p>
+
+            <p>
+                Su diseño inspirado en las motos del Rally Dakar
+                incorpora suspensión de largo recorrido,
+                llanta delantera de 21 pulgadas
+                y estructura ligera para mayor control.
+            </p>
+
+            <p>
+                También cuenta con iluminación LED,
+                tablero digital y sistema ABS desconectable,
+                ideal para aventuras dentro y fuera del asfalto.
+            </p>
+
+            <p>
+                La Ténéré 700 es reconocida mundialmente
+                por su confiabilidad, comodidad y capacidad
+                para enfrentar cualquier tipo de terreno.
+            </p>
+
+            <p>
+                <strong>Motor:</strong> 689 cc, bicilíndrico CP2, DOHC.<br>
+                <strong>Potencia:</strong> Aproximadamente 72 HP.<br>
+                <strong>Transmisión:</strong> 6 velocidades.<br>
+                <strong>Refrigeración:</strong> Líquida.<br>
+                <strong>Sistema:</strong> ABS desconectable.<br>
+                <strong>Suspensión:</strong> Largo recorrido ajustable.<br>
+                <strong>Tanque:</strong> 16 litros.
+            </p>
+
+            <a href="Registro.html" class="boton">
+                Comprar
+            </a>
+
+            <a href="logo3.html" class="boton">
+                Regresar
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
